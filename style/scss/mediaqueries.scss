@@ -1,0 +1,19 @@
+
+@media all and (max-width: 1200px) {
+
+
+.menu-burger {
+        display: none;
+    }  
+}
+
+@media all and (max-width: 768px) {
+
+.menu-inline {
+    display: none;
+}
+
+.menu-burger {
+    display: inline-block;
+}
+}
