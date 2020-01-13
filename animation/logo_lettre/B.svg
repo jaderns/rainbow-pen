@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xml:space="preserve"
+   style="enable-background:new 0 0 1366 768;"
+   viewBox="0 0 1366 768"
+   height="768px"
+   width="1366px"
+   y="0px"
+   x="0px"
+   id="Calque_1"
+   version="1.1"><metadata
+   id="metadata9"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs7" />
+<path
+   id="path2"
+   d="M647.7,338.4h35.5c8.4,0,14.8,2,19.2,6.1c4.4,4.1,6.6,9.9,6.6,17.5c0,4.6-0.8,8.4-2.5,11.5c-1.7,3-4.2,5.6-7.6,7.7  c3.4,0.6,6.3,1.6,8.7,3c2.4,1.3,4.3,3,5.8,4.9c1.5,1.9,2.6,4.1,3.2,6.6c0.6,2.4,1,5,1,7.8c0,4.3-0.8,8.1-2.2,11.4  c-1.5,3.3-3.6,6.1-6.3,8.4c-2.7,2.3-6,4-9.9,5.1c-3.9,1.1-8.3,1.7-13.1,1.7h-38.3V338.4z M671.5,374.3h4.4c7.5,0,11.2-3,11.2-8.9  c0-5.9-3.7-8.9-11.2-8.9h-4.4V374.3z M671.5,411.5h5.2c6,0,10.3-0.8,12.9-2.3c2.6-1.5,3.9-4,3.9-7.4s-1.3-5.9-3.9-7.4  c-2.6-1.5-6.9-2.3-12.9-2.3h-5.2V411.5z" />
+</svg>

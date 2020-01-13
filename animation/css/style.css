@@ -1,0 +1,159 @@
+body{
+    background-color: rgb(250, 224, 228) ;
+
+}
+
+.logocontour {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    fill: none;
+    opacity: 0;
+    animation: opacity 6s ease-in-out;
+}
+
+
+.logocontour path {
+    stroke: pink;
+    stroke-width: 2;
+    animation: coloration 3s ease;
+
+}
+
+.logo {
+    position: absolute;
+    width: 100px;
+     height: 100px;
+     top: 2%;
+    left: 2%;
+    fill: black;
+    opacity: 0px;
+    animation: opacitysizelogo 4.5s ease-in-out;
+    
+}
+
+
+.logocontour path:nth-child(1){
+    stroke-dasharray: 236px;
+    stroke-dashoffset: 236px;
+animation: anim-ligne 2s ease forwards;
+
+
+}
+.logocontour path:nth-child(2){
+
+    stroke-dasharray: 236px;
+    stroke-dashoffset: 236px;
+    animation: anim-ligne 2s ease forwards 0.2s;
+   
+}
+.logocontour path:nth-child(3){
+
+    stroke-dasharray: 236px;
+    stroke-dashoffset: 236px;
+    animation: anim-ligne 2s ease forwards 0.4s;
+}
+.logocontour path:nth-child(4){
+
+    stroke-dasharray: 236px;
+    stroke-dashoffset: 236px;
+    animation: anim-ligne 2s ease forwards 0.6s;
+}
+.logocontour path:nth-child(5){
+
+    stroke-dasharray: 236px;
+    stroke-dashoffset: 236px;
+    animation: anim-ligne 2s ease forwards 0.8s;
+}
+.logocontour path:nth-child(6){
+
+    stroke-dasharray: 236px;
+    stroke-dashoffset: 236px;
+    animation: anim-ligne 2s ease forwards 1.0s;
+}
+.logocontour path:nth-child(7){
+
+    stroke-dasharray: 316px;
+    stroke-dashoffset: 316px;
+    animation: anim-ligne 2s ease forwards 1.2s;
+}
+.logocontour path:nth-child(8){
+
+    stroke-dasharray: 236px;
+    stroke-dashoffset: 236px;
+    animation: anim-ligne 2s ease forwards 1.4s;
+}
+
+@keyframes anim-ligne {
+
+    to {
+
+        stroke-dashoffset: 0;
+    }
+   
+}
+
+@keyframes opacity {
+        from { 
+            opacity: 0%;
+         }
+        20%  { 
+            opacity: 80%;
+        } 
+        40% {
+            opacity: 90%;
+        }
+        45% {
+            opacity: 0%;
+        }
+        to   { 
+            opacity: 0%;
+         }
+      
+
+}
+
+
+
+@keyframes opacitysizelogo {
+    from { 
+        opacity: 0%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        height: 600px;
+        fill: white;
+     }
+
+    60% {
+        opacity: 0%;
+    }
+    65%{
+        width: 600px;
+        height: 600px;
+        top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 100%;
+   
+    }
+    95% {
+        opacity: 100%;
+        fill: white;
+    }
+    
+    to   { 
+        width: 100px;
+        height: 100px;
+        top: 2%;
+        left: 2%;
+        fill: black;
+
+    }
+     
+  }
+
