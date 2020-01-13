@@ -1,5 +1,5 @@
 <?php 
 
-define('DATABASE_DSN','mysql:;host=localhost;dbname=Rainbow');
+define('DATABASE_DSN','mysql:;host=localhost;dbname=rainbow');
 define('DATABASE_USER','root');
-define('DATABASE_PASSWORD','root');
+define('DATABASE_PASSWORD','');

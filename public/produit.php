@@ -14,19 +14,55 @@
             <?php 
 include('header.php');
 ?>
-            <div class="item item4">
-                <h2>Produit</h2>
+
+<div class="container">
+        <div class="row">
+                
+                <h2 class="offset-lg-1 col-lg-9 titre_couleur1">Produit</h2>
+                
+                <div class="offset-lg-1 col-lg-5">
+                   
+                    <img class="imgombre2" src="../public/photos/photo8.jpg" alt="photo produit 1"/>
+                </div> 
+
+                <div class="offset-lg-1 col-lg-4 offset-lg-1">
+                   
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, modi consequuntur reiciendis cum a earum minima vel eum velit magnam molestiae similique quidem quia ex quod deserunt quam provident architecto.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, modi consequuntur reiciendis cum a earum minima vel eum velit magnam molestiae similique quidem quia ex quod deserunt quam provident architecto.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, modi consequuntur reiciendis cum a earum minima vel eum velit magnam molestiae similique quidem quia ex quod deserunt quam provident architecto.</p>
+                        <a class="styled2">En savoir +</a>
+                </div>    
+                    
+                
+        </div>
+
+            <div class="cropImgbandeau_produit">
+                    <div>
+                        <div class="objet2"> 
+                            <h2 class="offset-lg-2 slogan2">Connecté</h2>
+                            <p class="offset-lg-2 col-lg-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, modi consequuntur reiciendis cum a earum minima vel eum velit magnam molestiae similique quidem quia ex quod deserunt quam provident architecto.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, modi consequuntur reiciendis cum a earum minima vel eum velit magnam molestiae similique quidem quia ex quod deserunt quam provident architecto.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, modi consequuntur reiciendis cum a earum minima vel eum velit magnam molestiae similique quidem quia ex quod deserunt quam provident architecto.</p>
+                            
+                            </div>
+                        <img class=""src="../public/photos/photo8.jpg" alt="photo produit 1"/>
+                         
+                    </div>                                     
+                        
+             </div>
+
+             <div class="row">
+                
+                <h2 class="offset-lg-1 col-lg-9 titre_couleur1">Etuis</h2>
+                
+                    <div class="offset-lg-1 col-lg-5">
+                        <img class="imgombre1" src="../public/photos/photo8.jpg" alt="photo produit 1"/>
+                    </div> 
+
+                 <div class="offset-lg-1 col-lg-4 offset-lg-1">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, modi consequuntur reiciendis cum a earum minima vel eum velit magnam molestiae similique quidem quia ex quod deserunt quam provident architecto.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, modi consequuntur reiciendis cum a earum minima vel eum velit magnam molestiae similique quidem quia ex quod deserunt quam provident architecto.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, modi consequuntur reiciendis cum a earum minima vel eum velit magnam molestiae similique quidem quia ex quod deserunt quam provident architecto.</p>   
+                 </div>    
             </div>
 
-            <div class="item item5">
-                <h2>Connecté</h2>
-            </div>
-
-            <div class="item item6">
-            <h2>Etuis</h2>
-            </div>
-
-            <div class="item item7">
+        <div class="row fontcom">
+            <!-- background vert -->
+            <div class="offset-lg-2 col-lg-8 offright-2">
                 <h2>Commentaires</h2>
 
                 <?php 
@@ -34,9 +70,9 @@ include('header.php');
 use App\SessionManager;
 require_once __DIR__.'/../src/SessionManager.php';
 
-if(null !== $client = SessionManager::loggedClient()) {
+if(null!==$client=SessionManager::loggedClient()) {
     ?>
-                <button id="button_comment" onclick="mydisplay()">Nouveau commentaire</button>
+                <button id="button_comment" onclick="display()">Nouveau commentaire</button>
                 <div id="form_comment">
                     <form method="post">
                         <input type="hidden" name="email" value="<?$client->email()?>">
@@ -98,11 +134,16 @@ foreach ($commentaires as $value)
 
 ?>
             </div>
+            </div>
+        </div>
 
-            <div class="item item8">
+            <div class="row">
 
 <?php 
 
 include('footer.php');
 ?>
 </div>
+</div>
+</body>
+</html>

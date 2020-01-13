@@ -2,38 +2,38 @@
 
 //COLORS
 //Claires
-$color1: #C5F1DF;
-$color2: #FCEE9C;
-$color3: #FEECFC;
+$colorclaire1: #C5F1DF;
+$colorclaire2: #FCEE9C;
+$colorclaire3: #FEECFC;
 //Foncées
-$color1dark: #ACD5C5;
-$color2dark: #EBD033;
-$color3dark: #FCC1D7;
+$colorfonce1: #ACD5C5;
+$colorfonce2: #EBD033;
+$colorfonce3: #FCC1D7;
 
 //all 
 
 .color1 {
-    background-color: $color1;
+    background-color: $colorclaire1;
 }
 
 .color2 {
-    background-color: $color2;
+    background-color: $colorclaire2;
 }
 
 .color3 {
-    background-color: $color3;
+    background-color: $colorclaire3;
 }
 
 .color1dark {
-    background-color: $color1dark;
+    background-color: $colorfonce1;
 }
 
 .color2dark {
-    background-color: $color2dark;
+    background-color: $colorfonce2;
 }
 
 .color3dark {
-    background-color: $color3dark;
+    background-color: $colorfonce3;
 }
 
 body {
@@ -47,11 +47,12 @@ html {
 }
 
 h2 {
-    margin: 50px;
-    // height: 100px;
-    text-shadow: 19px 17px 0 pink, -19px -17px 0 teal;
+    margin-top: 50px;
+    height: 100px;
+    text-shadow: 14px 11px 0 $colorclaire1, -14px -10px 0 $colorclaire3; 
 
     .titre_couleur1 {
+        text-shadow: 14px 10px 0 $colorclaire1, -14px -10px 0 $colorclaire3;  
         color: white;
     }
 }
@@ -69,16 +70,21 @@ h2 {
 
 .form_box {
     background-color: white;
-    border: 3px solid $color1dark;
+    border: 3px solid $colorfonce3;
     border-radius: 20px;
     text-align: left;
     margin-bottom: 30px;
     padding: 30px 0;
 
 
-    h2{
-       text-align: center;
+    h2 { margin-top: 50px;
+    height: 100px;
+    text-shadow: 14px 10px 0 $colorclaire1, -14px -10px 0 $colorclaire3;  
+
+    .titre_couleur1 {
+        text-shadow: 14px 10px 0 $colorclaire1, -14px -10px 0 $colorclaire3;  
     }
+}
 
     label {
         margin: 10%;
@@ -107,7 +113,7 @@ h2 {
 
     a {
         text-decoration: none;
-        color: $color3dark; 
+        color: $colorfonce3; 
     }
 
     p {
@@ -120,7 +126,7 @@ h2 {
 
         &:nth-child(even) {
             margin-bottom: 25px;
-            color: $color1dark;
+            color: $colorfonce3;
 
         }
     }
@@ -249,36 +255,68 @@ h2 {
 
 }
 
-.styled {
-    display: inline-block;
-    min-width: 150px;
+.styled1 {
+    display: block;
+    width: 150px;
     padding: 12px 20px;
     font-size: 1rem;
     text-align: center;
-    color: palevioletred;
-    border: solid 0.1rem pink;
+    color: $colorfonce2;
+    border: solid 0.1rem $colorclaire2;
     border-radius: 100px;
     background-color: rgba(0, 0, 0, 0);
-    box-shadow: 8px 8px 0 palevioletred;
+    box-shadow: 8px 8px 0 $colorfonce2;
     background-color: white;
     z-index: 500;
-    text-decoration: none;
-    margin-bottom: 8px;
+    margin: 10px;
+
 }
 
-.styled:hover {
+
+.styled1:hover {
     box-shadow: none;
-    margin-left: 8px;
-    margin-top: 8px;
-    margin-bottom: 0;
+    margin-left: 20px;
+    margin-top: 20px;
 
 }
 
-.styled:active {
-    color: white;
-    background-color: pink;
+.styled1:active {
+    color: white;  
+    background-color: $colorclaire2;
 
 }
+
+.styled3 {
+    display: block;
+    width: 150px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: $colorfonce3;
+    border: solid 0.1rem $colorclaire3;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 8px 8px 0 $colorfonce3;
+    background-color: white;
+    z-index: 500;
+    margin: 10px;
+
+}
+
+
+.styled3:hover {
+    box-shadow: none;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+.styled3:active {
+    color: white;  
+    background-color: $colorclaire3;
+
+}
+
 
 .caroussel_image {
 
@@ -307,27 +345,38 @@ h2 {
     padding: 1%;
     margin: 1% 0;
     width: 100%;
-    background-color: cornflowerblue;
-    border: 1px solid black;
+    background-color: $colorclaire1;
+    border: 1px solid $colorfonce1;
     outline: none;
 }
 
 .active,
 .collapsible:hover {
-    background-color: lightgrey;
-    color: black;
+    background-color: $colorfonce1;
+        color: white;
+        border: 2px solid $colorclaire1;
 }
 
 .content_collapsible {
     padding: 1%;
-    background-color: lightgrey;
+    background-color: white;
     display: none;
 }
 
 .faq {
     margin-bottom: 100px;
 }
+
+.fontfaq {
+    background-color: $colorfonce1;
+
+}
+.position{
+
+    margin-top: 400px;
+}
 ////////////////////
+
 //profil
 
 .box {
@@ -381,12 +430,12 @@ h2 {
     }
 
     &:nth-child(odd) {
-        background-color: $color3;
+        background-color: $colorclaire3;
 
     }
     &:nth-child(even) {
 
-        background-color: $color1;
+        background-color: $colorclaire1;
     }
 
     .select-css {
@@ -422,6 +471,211 @@ h2 {
         font-weight: normal;
     }
     /////test
+}
+
+ //Produit
+ .imgombre1 {
+    position: absolute;
+    // min-width: 75%;
+    width: 100%;
+    box-shadow:  40px -40px 0 $colorclaire2;
+}
+
+
+.imgombre1:hover {
+    position: absolute;
+    // min-width: 75%;
+    width: 100%;
+    box-shadow:  -40px 40px 0 $colorclaire2;
+}
+
+.imgombre2 {
+    position: absolute;
+    // min-width: 75%;
+    width: 100%;
+    box-shadow:  40px -40px 0 $colorfonce1;
+    left: 0;
+}
+
+.imgombre2:hover {
+    position: absolute;
+    // min-width: 75%;
+    width: 100%;
+    box-shadow:  -40px 40px 0 $colorclaire1;
+}
+
+.imgombre3 {
+    position: absolute;
+    // min-width: 75%;
+    width: 100%;
+    box-shadow:  40px -40px 0 $colorfonce3;
+}
+
+.imgombre3:hover {
+    position: absolute;
+    // min-width: 75%;
+    width: 100%;
+    box-shadow:  -40px 40px 0 $colorclaire3;
+}
+
+.position{
+
+    margin-top: 400px;
+}
+
+
+.styled2 {
+    display: block;
+    width: 150px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: $colorfonce1;
+    border: solid 0.1rem $colorclaire1;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 8px 8px 0 $colorfonce1;
+    background-color: white;
+    z-index: 500;
+    margin: 10px;
+
+}
+
+.styled2:hover {
+    box-shadow: none;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+.styled2:active {
+    color: white;
+    background-color: $colorclaire1;
+
+}
+
+
+//commentaire
+.fontcom {
+        background-color: $colorfonce3;
+        height: 60vh;
+        margin-top: 500px;
+    }
+
+    .cropImgbandeau_produit {
+
+        height: 82vh;
+        overflow: hidden;
+        margin-top: 420px;
+        img {
+            position: absolute;
+            // min-width: 75%;
+            height: 82%;
+            right: 0;
+
+        }
+    }
+
+    .objet2 {
+        position: absolute;
+        padding-right: 300px;
+        background-color: $colorclaire2;
+        border: 1px solid $colorclaire2;
+        width: 70%;
+        height: 82%;
+        clip-path: polygon(0% 0, 65% 0, 100% 100%, 0% 100%);
+        left: 0;
+        z-index: 500;
+
+    }
+
+    .fontstore{
+        height: 80vh;
+    }
+
+//fiche
+.photoproduit {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.imgfiche {
+    display: flex;
+
+    width: auto;
+    justify-content: space-between;
+}
+
+    .fontfiche {
+    height: 100vh;
+    background-color: $colorclaire2;
+
+    }
+
+    .imgminiature {
+        width: 147px;
+        margin-bottom: 40px;
+    }
+
+//panier
+
+.photopanier {
+    width: 40%;
+}
+
+.fontpanier {
+    background-color: $colorfonce3;
+    height: 40vh;
+}
+
+.fontcommande {
+
+    background-color: $colorfonce1;
+    height: 100vh;
+}
+.textepanier {
+    margin-top: 90px;
+    size: 2.5em;
+    color: white;
+    text-align: center;
+}
+
+.styledpanier {
+
+    width: 150px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: $colorfonce1;
+    border: solid 0.1rem $colorclaire1;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 8px 8px 0 $colorfonce1;
+    background-color: white;
+    z-index: 500;
+    margin: 10px;
+
+}
+
+
+.styledpanier:hover {
+    box-shadow: none;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+.styledpanier:active {
+    color: white;  
+    background-color: $colorclaire1;
+
+}
+
+.forme1 {
+height: 60px;
+width: 60px;
+background-color: white;
+
 }
 
 .footer {
